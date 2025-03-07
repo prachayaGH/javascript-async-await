@@ -13,3 +13,9 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+async function getProfile() {
+  const onSuccess = await getJohnProfile()
+  console.log(onSuccess)
+}
+
+getProfile()
